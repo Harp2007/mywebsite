@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface-container-lowest: #0e0e0e;
+  --color-surface-container-low: #1c1b1b;
+  --color-surface-container: #201f1f;
+  --color-surface-container-high: #2a2a2a;
+  --color-surface-container-highest: #353534;
+  --color-surface: #131313;
+  --color-surface-dim: #131313;
+  --color-surface-bright: #3a3939;
+  --color-surface-variant: #353534;
+  --color-background: #131313;
+  --color-on-background: #e5e2e1;
+  --color-primary: #ffffff;
+  --color-on-primary: #2f3131;
+  --color-primary-container: #e2e2e2;
+  --color-on-primary-container: #636565;
+  --color-primary-fixed: #e2e2e2;
+  --color-primary-fixed-dim: #c6c6c7;
+  --color-on-primary-fixed: #1a1c1c;
+  --color-on-primary-fixed-variant: #454747;
+  --color-secondary: #c7c6c6;
+  --color-on-secondary: #2f3131;
+  --color-secondary-container: #484949;
+  --color-on-secondary-container: #b8b8b8;
+  --color-secondary-fixed: #e3e2e2;
+  --color-secondary-fixed-dim: #c7c6c6;
+  --color-on-secondary-fixed: #1a1c1c;
+  --color-on-secondary-fixed-variant: #464747;
+  --color-tertiary: #ffffff;
+  --color-on-tertiary: #2f3131;
+  --color-tertiary-container: #e2e2e2;
+  --color-on-tertiary-container: #636565;
+  --color-tertiary-fixed: #e2e2e2;
+  --color-tertiary-fixed-dim: #c6c6c7;
+  --color-outline: #8e9192;
+  --color-outline-variant: #444748;
+  --color-on-surface: #e5e2e1;
+  --color-on-surface-variant: #c4c7c8;
+
+  --font-display: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-headline-lg: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-headline-md: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-headline-sm: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body-lg: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body-md: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-code-inline: 'JetBrains Mono', monospace;
+  --font-label-technical: 'JetBrains Mono', monospace;
+  --font-label-technical-sm: 'JetBrains Mono', monospace;
+
+  --spacing-container-max: 72rem;
+  --spacing-gutter-mobile: 1rem;
+  --spacing-gutter-desktop: 1.5rem;
+  --spacing-space-2xs: 0.125rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2rem;
+  --spacing-space-2xl: 3rem;
+  --spacing-space-3xl: 4.5rem;
+  --spacing-space-4xl: 6rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-surface-container-lowest);
+    color: var(--color-on-surface);
+    font-family: var(--font-body-md);
+  }
+}
+
+/* Custom utility classes matching the design specifications */
+.font-display {
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+.font-headline-lg {
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+.font-headline-md {
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+.font-headline-sm {
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+.font-body-lg {
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+.font-body-md {
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+.font-code-inline,
+.font-label-technical,
+.font-label-technical-sm {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.text-display {
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+}
+.text-headline-lg {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+}
+.text-headline-md {
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: -0.015em;
+  font-weight: 500;
+}
+.text-headline-sm {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+}
+.text-body-lg {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.005em;
+  font-weight: 400;
+}
+.text-body-md {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0em;
+  font-weight: 400;
+}
+.text-label-technical {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+}
+.text-label-technical-sm {
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+}
+.text-code-inline {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0em;
+  font-weight: 400;
+}
